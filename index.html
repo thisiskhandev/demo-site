@@ -11,6 +11,10 @@
         margin: 0;
         box-sizing: border-box;
       }
+      body.dark * {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
       a {
         text-decoration: none;
       }
@@ -74,7 +78,7 @@
       }
       .content {
         display: flex;
-        margin-top: 40px;
+        padding-top: 40px;
       }
       .box {
         padding: 15px;
@@ -285,6 +289,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/assets/animStyles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
+      integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js.js"></script>
   </head>
   <body>
     <header id="firstHeader" style="background-color: #fff; position: static">
@@ -306,7 +318,9 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:void(0)">Refrences <i class="fas fa-caret-down"></i></a>
+            <a href="javascript:void(0)"
+              >Refrences <i class="fas fa-caret-down"></i
+            ></a>
             <ul class="sub_menu">
               <li><a href="#">Refrence 1</a></li>
               <li><a href="#">Refrence 2</a></li>
@@ -316,7 +330,9 @@
             </ul>
           </li>
           <li>
-            <a href="javascript:void(0)">Excercises <i class="fas fa-caret-down"></i></a>
+            <a href="javascript:void(0)"
+              >Excercises <i class="fas fa-caret-down"></i
+            ></a>
             <ul class="sub_menu">
               <li><a href="#">Excercise 1</a></li>
               <li><a href="#">Excercise 2</a></li>
@@ -356,7 +372,7 @@
         </ul>
         <ul class="menu menu_icons">
           <li>
-            <a href="#"><i class="fas fa-adjust"></i></a>
+            <a href="#" id="darkMode"><i class="fas fa-adjust"></i></a>
           </li>
           <li>
             <a href="#"><i class="fas fa-globe-asia"></i></a>
