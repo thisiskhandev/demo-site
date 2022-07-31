@@ -276,6 +276,18 @@
         background-color: #333;
         color: #fff;
       }
+      button#closeModalBtn {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        outline: none;
+        font-size: 27px;
+        padding: 0 10px;
+        background-color: #000;
+        color: #fff;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -353,7 +365,6 @@
         </ul>
       </div>
     </header>
-
     <header style="position: sticky; top: 0">
       <div style="display: flex">
         <ul class="menu">
@@ -372,10 +383,14 @@
         </ul>
         <ul class="menu menu_icons">
           <li>
-            <a href="#" id="darkMode"><i class="fas fa-adjust"></i></a>
+            <a href="javascript:void(0)" id="darkMode"
+              ><i class="fas fa-adjust"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-globe-asia"></i></a>
+            <a href="javascript:void(0)" id="modalBtn"
+              ><i class="fas fa-globe-asia"></i
+            ></a>
           </li>
           <li>
             <a href="#"><i class="fas fa-search"></i></a>
@@ -383,6 +398,36 @@
         </ul>
       </div>
     </header>
+    <main
+      id="popup"
+      style="
+        display: none;
+        background-color: #fff;
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99999;
+        max-height: 300px;
+        overflow-y: auto;
+        box-shadow: 0 0 900px 400px #000000a1;
+      "
+    >
+      <h3>Heading</h3>
+      <p>
+        Cillum ad do et ea anim officia in est. Dolore aliqua culpa velit
+        commodo commodo. Fugiat duis qui nisi pariatur cillum excepteur. Ipsum
+        nostrud est est ullamco magna culpa anim magna pariatur. Quis
+        exercitation qui duis qui quis ea ex sunt reprehenderit sint est
+        consequat pariatur velit. Dolore ipsum est tempor nostrud reprehenderit
+        reprehenderit minim adipisicing sunt.
+      </p>
+      <button id="closeModalBtn" style="cursor: pointer">&times;</button>
+    </main>
     <main class="content">
       <section>
         <div class="box">
