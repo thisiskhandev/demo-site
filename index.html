@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Display properties</title>
+    <title>Demo HTML / CSS</title>
     <style>
       * {
         padding: 0;
@@ -35,7 +35,11 @@
         margin: 0;
         font-family: "Roboto", sans-serif;
       }
-
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4;
+      }
       .menu {
         display: flex;
         padding: 0;
@@ -70,15 +74,25 @@
       }
       .content {
         display: flex;
-        margin-top: 90px;
+        margin-top: 40px;
       }
-
       .box {
         padding: 15px;
         background-color: #eee;
         border-radius: 10px;
         border: 1px solid #ddd;
         margin: 25px;
+        transition: 0.3s;
+      }
+      .box:hover {
+        box-shadow: 0 0px 20px 10px #cccccc91;
+        cursor: default;
+        background-color: #fff;
+        transition: 0.4s;
+        border-color: #fff;
+      }
+      .box h2 {
+        margin-bottom: 20px;
       }
       #foot1 {
         border: 1px solid #ddd;
@@ -147,9 +161,116 @@
         margin-left: 10px;
         font-size: 26px;
       }
-
       .icons ul li a {
         color: #000;
+      }
+      #firstHeader {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        padding: 0;
+      }
+      #firstHeader ul li {
+        list-style: none;
+      }
+      #leftSide,
+      #rightSide {
+        width: 50%;
+      }
+
+      #leftSide ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+      }
+
+      #rightSide ul {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 100%;
+      }
+
+      #rightSide ul li {
+        margin-right: 35px;
+      }
+
+      #rightSide ul li a.btn {
+        color: #fff;
+        width: 135px;
+        display: block;
+        background-color: #000;
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: 0.2s;
+      }
+      #rightSide ul li a.btn:hover {
+        background-color: #04aa6d;
+        transition: 0.2s;
+      }
+      li#logo a {
+        font-size: 50px;
+        color: #04aa6d;
+      }
+      li#logo a i {
+        margin: 0 !important;
+      }
+      #leftSide li#logo a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+      #leftSide ul li {
+        height: 100%;
+        position: relative;
+      }
+      #leftSide ul li a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-weight: 500;
+        padding: 0 10px;
+      }
+      #leftSide ul li a:hover {
+        background-color: #04aa6d;
+        color: #fff;
+      }
+      #leftSide ul li a i {
+        margin-left: 10px;
+      }
+      #leftSide ul.sub_menu {
+        background-color: #000;
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        z-index: 10;
+      }
+
+      #leftSide .sub_menu a {
+        display: block;
+        color: #fff;
+        background-color: #000;
+        padding: 10px;
+        font-size: 14px;
+      }
+      #leftSide ul li ul.sub_menu li {
+        height: auto;
+      }
+      #leftSide ul li:hover ul.sub_menu {
+        display: block;
+      }
+      #leftSide ul li ul.sub_menu {
+        display: none;
+      }
+      #leftSide ul li a:focus {
+        background-color: #333;
+        color: #fff;
       }
     </style>
     <link
@@ -166,7 +287,58 @@
     />
   </head>
   <body>
-    <header>
+    <header id="firstHeader" style="background-color: #fff; position: static">
+      <div id="leftSide">
+        <ul id="upperMenu">
+          <li id="logo">
+            <a href="#"><i class="fab fa-aws"></i></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"
+              >Tutorials <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="sub_menu">
+              <li><a href="#">Tutorial 1</a></li>
+              <li><a href="#">Tutorial 2</a></li>
+              <li><a href="#">Tutorial 3</a></li>
+              <li><a href="#">Tutorial 4</a></li>
+              <li><a href="#">Tutorial 5</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Refrences <i class="fas fa-caret-down"></i></a>
+            <ul class="sub_menu">
+              <li><a href="#">Refrence 1</a></li>
+              <li><a href="#">Refrence 2</a></li>
+              <li><a href="#">Refrence 3</a></li>
+              <li><a href="#">Refrence 4</a></li>
+              <li><a href="#">Refrence 5</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Excercises <i class="fas fa-caret-down"></i></a>
+            <ul class="sub_menu">
+              <li><a href="#">Excercise 1</a></li>
+              <li><a href="#">Excercise 2</a></li>
+              <li><a href="#">Excercise 3</a></li>
+              <li><a href="#">Excercise 4</a></li>
+              <li><a href="#">Excercise 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Videos</a></li>
+        </ul>
+      </div>
+      <div id="rightSide">
+        <ul>
+          <li><a href="#" class="btn">Pro</a></li>
+          <li><a href="#" class="btn">Get Certificate</a></li>
+          <li><a href="#" class="btn">Website</a></li>
+          <li><a href="#" class="btn">Log in</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <header style="position: sticky; top: 0">
       <div style="display: flex">
         <ul class="menu">
           <li>
