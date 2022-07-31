@@ -1,0 +1,294 @@
+<html>
+<head>
+	<title>Display properties</title>
+	<style>
+		* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	a {
+		text-decoration: none;
+	}
+		ul#menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu  {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 8px;
+	background-color: #535353;
+	border-radius: 4px;
+}
+.menu li a:hover {
+background-color: #04aa6d;
+}
+.menu_icons {
+    justify-content: end;
+    width: 30%;
+}
+
+.menu_icons li {
+    margin-right: 20px;
+}
+.content {
+    display: flex;
+    margin-top: 90px;
+}
+
+.box {
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 25px;
+}
+#foot1 {
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 20px 0;
+}
+
+#foot1 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#foot1 ul li {
+    list-style-type: none;
+}
+
+#foot1 ul li a {
+    background-color: #eee;
+    padding: 12px 0;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 500;
+    width: 250px;
+    display: block;
+    text-align: center;
+    transition: .4s;
+}
+
+#foot1 ul li a:hover {
+    background-color: #000;
+    color: #fff;
+    transition: .4s;
+}
+#foot2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#foot2 ul li {
+    list-style: none;
+}
+
+#foot2 h3 {
+    margin: 15px 0;
+}
+
+#foot2 a {
+	color: #000;
+	font-size: 12px;
+}
+#copyright {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 14px;
+    max-width: 800px;
+    display: block;
+}
+#copyright p {
+    margin-bottom: 10px;
+}
+.icons ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+.icons ul li a {
+    color: #000;
+}
+
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header style="position: static;">
+		
+	</header style="position: sticky;">
+	<header>
+		<div style="display: flex;">
+		<ul class="menu">
+			<li><a href="#" title="Home"><i class="fas fa-home"></i></a></li>
+			<li><a href="#">HTMl</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">SQL</a></li>
+			<li><a href="#">Python</a></li>
+			<li><a href="#">PHP</a></li>
+			<li><a href="#">JAVA</a></li>
+			<li><a href="#">Bootstrap</a></li>
+			<li><a href="#">JQuery</a></li>
+		</ul>
+		<ul class="menu menu_icons">
+			<li><a href="#"><i class="fas fa-adjust"></i></a></li>
+			<li><a href="#"><i class="fas fa-globe-asia"></i></a></li>
+			<li><a href="#"><i class="fas fa-search"></i></a></li>
+		</ul>
+		</div>
+	</header>
+	<main class="content">
+		<section>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+		</section>
+		<section>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+		</section>
+		<section>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="box">
+				<h2>What is Lorem Ipsum?</h2>
+				<p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<main>
+			<section id="foot1">
+				<ul>
+					<li><a href="#">Report Error</a></li>
+					<li><a href="#">Forum</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Buy Certificate</a></li>
+				</ul>
+			</section>
+			<section id="foot2">
+				<ul class="quick_links">
+					<h3>Top Tutorials</h3>
+					<li><a href="#">HTML Tutorial</a></li>
+					<li><a href="#">CSS Tutorial</a></li>
+					<li><a href="#">JavaScript Tutorial</a></li>
+					<li><a href="#">How To Tutorial</a></li>
+					<li><a href="#">SQL Tutorial</a></li>
+					<li><a href="#">Python Tutorial</a></li>
+					<li><a href="#">W3.CSS Tutorial</a></li>
+				</ul>
+				<ul class="quick_links">
+					<h3>Top Tutorials</h3>
+					<li><a href="#">HTML Tutorial</a></li>
+					<li><a href="#">CSS Tutorial</a></li>
+					<li><a href="#">JavaScript Tutorial</a></li>
+					<li><a href="#">How To Tutorial</a></li>
+					<li><a href="#">SQL Tutorial</a></li>
+					<li><a href="#">Python Tutorial</a></li>
+					<li><a href="#">W3.CSS Tutorial</a></li>
+				</ul>
+				<ul class="quick_links">
+					<h3>Top Tutorials</h3>
+					<li><a href="#">HTML Tutorial</a></li>
+					<li><a href="#">CSS Tutorial</a></li>
+					<li><a href="#">JavaScript Tutorial</a></li>
+					<li><a href="#">How To Tutorial</a></li>
+					<li><a href="#">SQL Tutorial</a></li>
+					<li><a href="#">Python Tutorial</a></li>
+					<li><a href="#">W3.CSS Tutorial</a></li>
+				</ul>
+				<ul class="quick_links">
+					<h3>Top Tutorials</h3>
+					<li><a href="#">HTML Tutorial</a></li>
+					<li><a href="#">CSS Tutorial</a></li>
+					<li><a href="#">JavaScript Tutorial</a></li>
+					<li><a href="#">How To Tutorial</a></li>
+					<li><a href="#">SQL Tutorial</a></li>
+					<li><a href="#">Python Tutorial</a></li>
+					<li><a href="#">W3.CSS Tutorial</a></li>
+				</ul>
+			</section>
+			<section id="copyright">
+				<p>W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, <a href="#">cookie and privacy policy.</a></p>
+				<p>Copyright 1999-2022 by Refsnes Data. All Rights Reserved.</p>
+				<p><a href="#">W3Schools is Powered by W3.CSS.</a></p>
+				<div class="icons">
+					<ul>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+	</footer>
+</body>
+</html>
