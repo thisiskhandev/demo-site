@@ -27,3 +27,8 @@ jQuery(document).ready(function () {
     }
   });
 });
+jQuery(document).keyup(function(event) {
+    if (event.which == 27) {
+        jQuery("#popup").css("display", "none");
+    }
+});
